@@ -1,0 +1,29 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <script src="https://bramp.github.io/js-sequence-diagrams/js/webfont.js"></script>
+    <script src="https://bramp.github.io/js-sequence-diagrams/js/snap.svg-min.js"></script>
+    <script src="https://bramp.github.io/js-sequence-diagrams/js/underscore-min.js"></script>
+    <script src="https://bramp.github.io/js-sequence-diagrams/js/sequence-diagram-min.js"></script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:sbhostBusinessUnit msdt:dt="string">16;#Microsoft|1afc9b13-6ef2-466c-a16f-4accac9c8087</mso:sbhostBusinessUnit>
+<mso:sbhostClient msdt:dt="string">667;#VAN DE WIELE|12c08c77-bef4-4fdf-b652-45fb317f0198</mso:sbhostClient>
+<mso:TaxCatchAll msdt:dt="string">643;#Connect Systems &#65286; People|c64a7657-8417-402e-8efc-fe91313c4d5c;#16;#Microsoft|1afc9b13-6ef2-466c-a16f-4accac9c8087;#667;#VAN DE WIELE|12c08c77-bef4-4fdf-b652-45fb317f0198;#5;#DBE|f147112c-6f7a-4b56-b669-f2fa66720915</mso:TaxCatchAll>
+<mso:sbhostBusinessPlan msdt:dt="string">643;#Connect Systems &#65286; People|c64a7657-8417-402e-8efc-fe91313c4d5c</mso:sbhostBusinessPlan>
+<mso:sbhostEntity msdt:dt="string">5;#DBE|f147112c-6f7a-4b56-b669-f2fa66720915</mso:sbhostEntity>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="diagram"></div>
+    <textarea id="diagram-text" style="visibility: hidden;">
+        Main->Availability:test
+    </textarea>
+
+    <script>
+        var diagram = Diagram.parse(document.getElementById('diagram-text').value);
+        diagram.drawSVG("diagram", {theme: 'simple'});
+    </script>
+</body>
+</html>
