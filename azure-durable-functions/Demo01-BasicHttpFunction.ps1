@@ -1,0 +1,1 @@
+﻿Invoke-RestMethod -Method Get http://localhost:7071/api/Basic?name=Techorama-Cafe
